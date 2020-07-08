@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="0"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="0"
+        android:title="@string/action_profile"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_history"
+        android:orderInCategory="0"
+        android:title="@string/action_history"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_forgot_pin"
+        android:orderInCategory="0"
+        android:title="@string/action_forgot_pin"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_backspace"
+        android:orderInCategory="1"
+        android:title="@string/backspace"
+        android:icon="@drawable/img_backspace"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="2"
+        android:title="@string/search"
+        android:icon="@drawable/img_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item
+        android:id="@+id/action_edit"
+        android:orderInCategory="3"
+        android:title="@string/edit"
+        android:icon="@drawable/ic_edit"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_lock"
+        android:orderInCategory="4"
+        android:title="@string/lock_device_to_app"
+        app:showAsAction="never"/>
+</menu>

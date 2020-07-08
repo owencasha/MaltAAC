@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/fab_margin"
+        android:paddingLeft="@dimen/fab_margin"
+        android:paddingStart="@dimen/fab_margin"
+        android:paddingRight="@dimen/fab_margin"
+        android:paddingEnd="@dimen/fab_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/pageNo"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/profile"
+            android:gravity="start"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_margin="@dimen/fab_margin"
+            android:backgroundTint="@color/colorPrimary"
+            android:id="@+id/profileEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/profile_hint"
+            android:inputType="text"
+            android:textColor="@color/greyText"
+            android:textColorHint="@color/greyText"
+            android:textColorHighlight="@color/colorAccent"
+            android:textSize="@dimen/general"
+            android:layout_gravity="center"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/backupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/backup"
+            android:textSize="@dimen/general"
+            android:textColor="@color/greyText"
+            android:layout_gravity="center"
+            android:background="@color/lightGrey"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:id="@+id/restoreButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/restore"
+            android:textSize="@dimen/general"
+            android:textColor="@color/greyText"
+            android:layout_gravity="center"
+            android:background="@color/lightGrey"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="@dimen/fab_margin"
+        android:id="@+id/profileMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/general"
+        android:textColor="@color/greyText"
+        android:gravity="start"
+        android:layout_gravity="start"/>
+
+</LinearLayout>

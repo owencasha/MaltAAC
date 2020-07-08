@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rename_category_layout">
+
+    <EditText
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/colorPrimary"
+        android:id="@+id/categoryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/category_hint"
+        android:inputType="text"
+        android:textColor="@color/greyText"
+        android:textColorHint="@color/greyText"
+        android:textColorHighlight="@color/colorAccent"
+        android:textSize="@dimen/general"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textSize="@dimen/pageNo"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textSize="@dimen/pageNo"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+</LinearLayout>

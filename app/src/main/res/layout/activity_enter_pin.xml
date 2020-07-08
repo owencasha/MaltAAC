@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/customDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/enter_pin_layout">
+
+    <TextView
+        android:id="@+id/enterPinText"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/general"
+        android:textColor="@color/greyText"
+        android:text="@string/pin_prompt"
+        android:layout_gravity="center"
+        android:gravity="start"/>
+
+    <EditText
+        android:id="@+id/pinEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/colorPrimary"
+        android:focusable="auto"
+        android:focusableInTouchMode="true"
+        android:inputType="numberPassword"
+        android:textColor="@color/greyText"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="@color/greyText"
+        android:textSize="@dimen/general" />
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textSize="@dimen/pageNo"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textSize="@dimen/pageNo"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Voice -->
+    <string-array name="voice_entries">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string-array name="voice_values">
+        <item>female</item>
+        <item>male</item>
+    </string-array>
+
+    <!-- Grid size -->
+    <string-array name="grid_size_entries_small">
+        <item>1x1</item>
+        <item>1x2</item>
+        <item>1x3</item>
+        <item>2x2</item>
+        <item>2x4</item>
+        <item>2x5</item>
+        <item>2x6</item>
+    </string-array>
+    <string-array name="grid_size_values_small">
+        <item>1x1</item>
+        <item>1x2</item>
+        <item>1x3</item>
+        <item>2x2</item>
+        <item>2x4</item>
+        <item>2x5</item>
+        <item>2x6</item>
+    </string-array>
+    <string-array name="grid_size_entries_large">
+        <item>1x1</item>
+        <item>1x2</item>
+        <item>1x3</item>
+        <item>2x2</item>
+        <item>2x4</item>
+        <item>2x5</item>
+        <item>2x6</item>
+        <item>3x5</item>
+        <item>4x6</item>
+    </string-array>
+    <string-array name="grid_size_values_large">
+        <item>1x1</item>
+        <item>1x2</item>
+        <item>1x3</item>
+        <item>2x2</item>
+        <item>2x4</item>
+        <item>2x5</item>
+        <item>2x6</item>
+        <item>3x5</item>
+        <item>4x6</item>
+    </string-array>
+
+    <!-- Variant Grouping -->
+    <string-array name="variant_grouping_entries">
+        <item>Show</item>
+        <item>Group</item>
+        <item>Hide</item>
+    </string-array>
+    <string-array name="variant_grouping_values">
+        <item>Show</item>
+        <item>Group</item>
+        <item>Hide</item>
+    </string-array>
+</resources>

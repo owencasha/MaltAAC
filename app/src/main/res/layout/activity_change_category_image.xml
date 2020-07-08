@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/change_category_image_layout">
+
+    <LinearLayout
+        android:paddingLeft="@dimen/fab_margin"
+        android:paddingStart="@dimen/fab_margin"
+        android:paddingRight="@dimen/fab_margin"
+        android:paddingEnd="@dimen/fab_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/general"
+            android:textColor="@color/greyText"
+            android:text="@string/image"
+            android:gravity="center"/>
+
+        <ImageView
+            android:padding="@dimen/play_margin"
+            android:id="@+id/galleryIcon"
+            android:layout_width="@dimen/smallImageButtonSize"
+            android:layout_height="@dimen/smallImageButtonSize"
+            android:contentDescription="@string/select_image_from_gallery"
+            app:srcCompat="@drawable/ic_image"/>
+
+        <ImageView
+            android:padding="@dimen/play_margin"
+            android:id="@+id/cameraIcon"
+            android:layout_width="@dimen/smallImageButtonSize"
+            android:layout_height="@dimen/smallImageButtonSize"
+            android:contentDescription="@string/take_photo"
+            app:srcCompat="@drawable/ic_camera"/>
+
+        <ImageView
+            android:id="@+id/webIcon"
+            android:layout_width="@dimen/smallImageButtonSize"
+            android:layout_height="@dimen/smallImageButtonSize"
+            android:contentDescription="@string/search_web"
+            android:padding="@dimen/play_margin"
+            app:srcCompat="@drawable/ic_web" />
+
+        <ImageView
+            android:padding="@dimen/play_margin"
+            android:id="@+id/selectedImage"
+            android:layout_width="@dimen/selectedImage"
+            android:layout_height="@dimen/selectedImage"
+            android:contentDescription="@string/selected_image"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textSize="@dimen/pageNo"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textSize="@dimen/pageNo"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+</LinearLayout>

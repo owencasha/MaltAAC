@@ -1,0 +1,15 @@
+<resources>
+	<dimen name="activity_vertical_margin">38.4dp</dimen>
+	<dimen name="nav_header_vertical_spacing">38.4dp</dimen>
+	<dimen name="smallImageButtonSize">120dp</dimen>
+	<dimen name="activity_horizontal_margin">38.4dp</dimen>
+	<dimen name="fab_margin">38.4dp</dimen>
+	<dimen name="margin1dp">2.4dp</dimen>
+	<dimen name="nav_header_height">384dp</dimen>
+	<dimen name="buttonPadding">43.2dp</dimen>
+	<dimen name="selectedImage">240dp</dimen>
+	<dimen name="play_margin">19.2dp</dimen>
+	<dimen name="imageText">24sp</dimen>
+	<dimen name="general">28.8sp</dimen>
+	<dimen name="pageNo">38.4sp</dimen>
+</resources>

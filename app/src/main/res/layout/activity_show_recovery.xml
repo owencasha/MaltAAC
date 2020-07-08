@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/recoveryCodeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pageNo"
+        android:gravity="center"
+        android:text="@string/view_recovery_code"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/pageNo" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pageNo"
+        android:layout_marginTop="@dimen/pageNo"
+        android:layout_marginRight="@dimen/pageNo"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/recovery_code_desc"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/recoveryCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pageNo"
+        android:layout_marginTop="@dimen/pageNo"
+        android:layout_marginRight="@dimen/pageNo"
+        android:layout_marginBottom="45sp"
+        android:gravity="center"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/recoveryOkButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="#FFFFFF"
+            android:text="@string/ok"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/pageNo" />
+    </LinearLayout>
+
+</LinearLayout>

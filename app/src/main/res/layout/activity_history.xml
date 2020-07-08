@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/fab_margin"
+        android:paddingStart="@dimen/fab_margin"
+        android:paddingRight="@dimen/fab_margin"
+        android:paddingEnd="@dimen/fab_margin"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/pageNo"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/history"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/historyListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/noHistoryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/general"
+            android:textColor="@color/greyText"
+            android:text="@string/no_history_to_show"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin">
+
+                <LinearLayout
+                    android:id="@+id/progressLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/general"
+                        android:textColor="@color/greyText"
+                        android:text="@string/updating_predictions"
+                        android:gravity="start"
+                        android:layout_gravity="start"/>
+
+                    <ProgressBar
+                        android:layout_marginTop="@dimen/play_margin"
+                        android:layout_marginBottom="@dimen/play_margin"
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_marginBottom="@dimen/play_margin"
+                        android:id="@+id/progressText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/general"
+                        android:textColor="@color/greyText"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:id="@+id/cancelButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel"
+                        android:textSize="@dimen/pageNo"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:id="@+id/clearHistoryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clear_history"
+                    android:textSize="@dimen/general"
+                    android:textColor="@color/greyText"
+                    android:layout_gravity="center"
+                    android:background="@color/lightGrey"/>
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/updatePredictionsButton"
+                    android:text="@string/update_predictions"
+                    android:textSize="@dimen/general"
+                    android:textColor="@color/greyText"
+                    android:layout_gravity="center"
+                    android:background="@color/lightGrey"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/imageGridFragment"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:background="@android:color/transparent">
+
+        <mt.edu.um.malteseaacapp.imagegrid.gridsetup.AdapterGridLayout
+            android:id="@+id/buttonsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/pageNo"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/zoomedImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginEnd="50sp"
+            android:layout_marginBottom="50sp"
+            android:contentDescription="@string/zoomed_image"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/pagination"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@android:color/transparent"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/nextButton"
+                android:background="@drawable/button_background"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="2dp"
+                android:contentDescription="@string/back"
+                app:srcCompat="@drawable/ic_arrow_right" />
+            <ImageButton
+                android:id="@+id/home"
+                android:background="@drawable/button_background"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="2dp"
+                android:contentDescription="@string/home"
+                app:srcCompat="@drawable/ic_home" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/backButton"
+                android:background="@drawable/button_background"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@string/next"
+                app:srcCompat="@drawable/ic_arrow_left" />
+            <ImageButton
+                android:id="@+id/showCore"
+                android:background="@drawable/button_background"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@string/core_button"
+                app:srcCompat="@drawable/ic_core" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

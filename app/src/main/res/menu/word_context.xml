@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/change_word"
+        android:orderInCategory="1"
+        android:title="@string/change_word" />
+    <item
+        android:id="@+id/change_category"
+        android:orderInCategory="2"
+        android:title="@string/change_category" />
+    <item
+        android:id="@+id/change_image"
+        android:orderInCategory="3"
+        android:title="@string/change_image" />
+    <item
+        android:id="@+id/change_sound"
+        android:orderInCategory="4"
+        android:title="@string/change_sound" />
+    <item
+        android:id="@+id/delete_word"
+        android:orderInCategory="5"
+        android:title="@string/delete_word" />
+    <item
+        android:id="@+id/show_hide"
+        android:orderInCategory="6"
+        android:title="@string/hide" />
+</menu>

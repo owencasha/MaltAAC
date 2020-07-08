@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/change_word_layout">
+
+    <TextView
+        android:id="@+id/wordEditTitle"
+        android:textSize="@dimen/pageNo"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginHorizontal="@dimen/fab_margin"
+        android:gravity="center_horizontal" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:maxLength="32"
+        android:id="@+id/wordEditText"
+        android:hint="@string/word_hint"
+        android:inputType="text"
+        android:textSize="@dimen/general"
+        android:textColor="@color/greyText"
+        android:textColorHint="@color/greyText"
+        android:textColorHighlight="@color/colorAccent"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:importantForAutofill="no"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:maxLength="32"
+        android:inputType="text"
+        android:id="@+id/wordEditRoot"
+        android:hint="@string/root_hint"
+        android:textSize="@dimen/general"
+        android:layout_marginHorizontal="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHighlight="@color/colorAccent"
+        android:importantForAutofill="no"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textSize="@dimen/pageNo"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textSize="@dimen/pageNo"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+</LinearLayout>

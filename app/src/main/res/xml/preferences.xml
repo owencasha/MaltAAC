@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Sounds"
+        android:key="sounds_category">
+        <ListPreference
+            android:key="voice"
+            android:title="Select voice"
+            android:summary="Choose between a male and female voice to speak selected words"
+            android:defaultValue="female"
+            android:entries="@array/voice_entries"
+            android:entryValues="@array/voice_values"/>
+        <SwitchPreference
+            android:key="speak_selected_word"
+            android:title="Speak selected word"
+            android:summary="Speak word immediately when clicked"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Image Selection"
+        android:key="image_selection_category">
+        <ListPreference
+            android:defaultValue="2x2"
+            android:entries="@array/grid_size_entries_large"
+            android:entryValues="@array/grid_size_values_large"
+            android:key="grid_size"
+            android:summary="Choose how many images to show on each grid page"
+            android:title="Select grid size" />
+        <SwitchPreference
+            android:key="show_predictions"
+            android:title="Show predictions"
+            android:summary="Predict the next word based on what has already been selected"
+            android:defaultValue="true"/>
+        <SwitchPreference
+            android:key="clear_image_selection"
+            android:title="Clear image selection"
+            android:summary="Clear the list of selected images when the play button is pressed"
+            android:defaultValue="true"/>
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:key="hold_to_enlarge"
+            android:summary="Press and hold on an image to view an enlarged version"
+            android:title="Hold to enlarge" />
+        <ListPreference
+            android:key="variant_grouping"
+            android:defaultValue="Show"
+            android:summary="Choose how word variants are presented"
+            android:title="Word variants"
+            android:entries="@array/variant_grouping_entries"
+            android:entryValues="@array/variant_grouping_values" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Appearance"
+        android:key="appearance_category">
+        <yuku.ambilwarna.widget.AmbilWarnaPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="0xFF2196F3"
+            android:key="selection_color"
+            android:summary="Set the background colour of the selection area"
+            android:title="Selection area colour" />
+        <yuku.ambilwarna.widget.AmbilWarnaPreference
+            android:key="background_color"
+            android:defaultValue="0xFFFFFFFF"
+            android:title="Background colour"
+            android:summary="Set the background colour of the image grid"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Security"
+        android:key="security_category">
+        <EditTextPreference
+            android:key="pin"
+            android:title="Set security pin"
+            android:summary="Set pin to prevent access to settings"
+            android:dialogTitle="Security pin"
+            android:defaultValue=""
+            android:inputType="numberPassword"/>
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:dependency="pin"
+            android:key="fingerprint_set"
+            android:summary="Use your finger to quickly access restricted areas"
+            android:title="Biometric authentication" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Advanced"
+        android:key="advanced_category">
+        <Preference
+            android:key="restore_preferences"
+            android:title="Restore default preferences"
+            android:summary="Restore preferences back to their default"
+            android:enabled="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>
